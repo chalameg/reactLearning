@@ -1,9 +1,15 @@
 const bodyParser = require('body-parser');
 const express = require('express');
+const cors = require('cors');
 
 const eventRoutes = require('./routes/events');
 
 const app = express();
+
+app.use(cors({
+  origin: 'http://localhost:3000',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Include the PUT method here
+}));
 
 app.use(bodyParser.json());
 app.use((req, res, next) => {

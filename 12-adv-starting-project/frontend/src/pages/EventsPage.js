@@ -1,39 +1,26 @@
-import React, { useEffect, useState } from 'react'
-import EventsList from '../components/EventsList';
+import EventsList from "../components/EventsList";
+import { json, useLoaderData } from "react-router-dom";
 
-const EventsPage = () => {
+function EventsPage() {
+  const data = useLoaderData();
 
-  const [events, setEvents]= useState([]);
-  const [error, setError]= useState("");
-
-  useEffect(()=>{
-    const getEvents = async () =>{
-      try {
-        const response = await fetch("http://localhost:8080/events");
-
-        if(!response.ok){
-          throw new Error("Something went wrong");
-        }
-
-        const events = await response.json();
-
-        console.log("running ", events)
-        
-        setEvents(events.events);
-      } catch (error) {
-        setError(error.message)
-      }
-    }
-    
-    getEvents();
-  }, []);
+  const events = data.events;
 
   return (
     <>
-    {!error && <EventsList events={events}/>}
-    {error&& <div>{error}</div>}
+      <EventsList events={events} />
     </>
-  )
+  );
 }
 
-export default EventsPage
+export default EventsPage;
+
+export const eventsLoader = async () => {
+  const response = await fetch("http://localhost:8080/events");
+
+  if (!response.ok) {
+    return json({ message: "Error loading events" }, { status: 500 });
+  } else {
+    return response;
+  }
+};

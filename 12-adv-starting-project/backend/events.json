@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"event","image":"https://www.google.com/imgres?imgurl=https%3A%2F%2Fjandevents.com%2Fwp-content%2Fuploads%2Fjand-party.jpg&tbnid=BwIxa9IdXHe5AM&vet=12ahUKEwjaopTWmar_AhXQpicCHSVfAngQMygMegUIARD3AQ..i&imgrefurl=https%3A%2F%2Fjandevents.com%2F&docid=uuhveQRWDd_dGM&w=1920&h=1280&q=event&ved=2ahUKEwjaopTWmar_AhXQpicCHSVfAngQMygMegUIARD3AQ","date":"2023-06-08","description":"http://localhost:8080/events","id":"b2b6e94e-8ea3-4e56-b88b-6e93ec37b59f"},{"title":"event","image":"https://www.google.com/imgres?imgurl=https%3A%2F%2Fjandevents.com%2Fwp-content%2Fuploads%2Fjand-party.jpg&tbnid=BwIxa9IdXHe5AM&vet=12ahUKEwjaopTWmar_AhXQpicCHSVfAngQMygMegUIARD3AQ..i&imgrefurl=https%3A%2F%2Fjandevents.com%2F&docid=uuhveQRWDd_dGM&w=1920&h=1280&q=event&ved=2ahUKEwjaopTWmar_AhXQpicCHSVfAngQMygMegUIARD3AQ","date":"2023-06-13","description":"An event is a planned and organized occasion, for example a social gathering or a sports match. The cross-country section of the three-day event was held here yesterday. ... major sporting events.","id":"f120169f-fabb-49a0-ac63-b2c8960335b1"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
